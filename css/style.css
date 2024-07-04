@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    font-family: sans-serif;
+}
+body{
+    background: #001;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+menu{
+    background: #123;
+    width: 60px;
+    height: 100%;
+    padding:20px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+@media(min-width:600px){
+    menu:hover{
+        width: 260px;
+    }
+}
+ul{
+    list-style: none;
+    position: relative;
+    height: 95%;
+}
+ul li a{
+display: block;
+text-decoration: none;
+padding:10px;
+margin:10px 0;
+display: flex;
+align-items: center;
+gap: 40px;
+transition: 0.5s;
+border-radius: 8px;
+}
+
+
+ul li a:hover, .active, .main .box:hover,td:hover{
+background: #ffffff55;
+}
+.log{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.log a{
+    background: #a00;
+}
+ul li a i{
+    font-size: 30px;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.profile h2{
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border:3px solid white;
+    flex-shrink: 0;
+
+}
+.img img{
+    width: 100%;
+}
+.content{
+    height: 100%;
+    width: 100%;
+    margin: 10px;
+    overflow: auto;
+    
+}
+.content .title{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #0E46A3;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+.main .box{
+    background: #123;
+    height:  150px;
+    flex-basis: 150px;
+    flex-grow: 1;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: 0.5s;
+}
+.main .box i{
+    font-size: 40px;
+
+}
+.main .box .data{
+    text-align: center;
+}
+.main .box .data span{
+    font-size: 30px;
+}
+table{
+    width: 100%;
+    text-align: center;
+    border-spacing: 8px;
+    transition: 0.5s;
+}
+td, th{
+    background: #123;
+    height:40px;
+    border-radius: 8px;
+}
+th{
+    background: #0E46A3;
+}
+.price, .count{
+    padding: 6px;
+    border-radius: 6px;
+}
+.price{
+    background: green;
+}
+.count{
+    background: red;
+}
